@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color:azure;
+    font-family: Helvetica;
 }
 
 body{
@@ -13,6 +15,9 @@ body{
     width: 600px;
     margin: 100px auto;
     padding: 40px;
+    animation-name: hehe;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 .input{
     padding: 2rem 0 2rem 0;
@@ -32,13 +37,13 @@ body{
     padding: 10px;
     border: none;
     background-color: transparent;
-    border: 2px solid #473939;
+    border: 4px solid rgb(105, 105, 255);
     border-radius: 3px;
     margin-right: 4px;
 }
 
 .inputs input[type = "submit"]{
-    height: 3rem;
+    height: 4rem;
     width: 6rem;
     background: #270aca;
     font-weight: bold;
@@ -90,3 +95,15 @@ body{
     color: #5e0df4;
     font-size: 25px;
 }
+
+@keyframes hehe{
+    0%{
+      transform: translate(0,0px);
+    }
+    50%{
+      transform: translate(0,10px);
+    }
+    100%{
+      transform: translate(0,-0px);
+    }
+    }
